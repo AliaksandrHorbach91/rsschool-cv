@@ -19,3 +19,11 @@
 * Gulp
 * Git
 
+
+## Education
+
+* Yanka Kupala State University of Grodno (Faculty of Physical Education)
+
+## English level
+
+* Elementary
