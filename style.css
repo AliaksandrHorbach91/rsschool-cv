@@ -370,7 +370,7 @@ template {
   align-items: center;
 }
 
-.header {
+.header__title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -445,3 +445,13 @@ template {
   border: 10px solid transparent;
   box-shadow: rgba(159, 90, 253, 0.4) 0 0 10px;
 }
+
+
+.title--bold {
+  position: relative;
+  text-transform: uppercase;
+  vertical-align:middle;
+  border-left:solid 5px rgba(159, 90, 253, 0.4);
+  padding:15px;  
+}
+
