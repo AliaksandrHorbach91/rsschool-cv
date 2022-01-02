@@ -537,19 +537,19 @@ template {
   color: rgba(159, 90, 253, 1)
 }
 
-.skills-list {
+.list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
 
-.skills-list__item {
+.list__item {
   min-width: 20rem;
   margin-top: 1rem;
   font-size: 1.2rem;
 }
 
-.skills-list__item::before {
+.list__item::before {
   content: "\2022";  
   color: rgba(159, 90, 253, 1);
   font-weight: bold;
@@ -559,10 +559,21 @@ template {
 }
 
 .footer {
-  max-width: 1024px;
-  margin: auto;
+  background-color: rgba(159, 90, 253, 0.4);;
+  padding: 1.5rem 0;
+}
+
+.footer__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+
+.footer__item {
+  min-width: 14rem;
 }
 
 .footer__img {
