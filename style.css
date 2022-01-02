@@ -558,6 +558,15 @@ template {
   margin-left: -1rem;
 }
 
+.list__link {
+  transition: 0.2s ease;
+}
+
+.list__link:hover {
+  color: rgba(159, 90, 253, 1);
+  transition: 0.2s ease;
+}
+
 .footer {
   background-color: rgba(159, 90, 253, 0.4);;
   padding: 1.5rem 0;
@@ -578,4 +587,23 @@ template {
 
 .footer__img {
   height: 2rem;
+}
+
+.hljs {
+  color: rgb(169, 183, 198); 
+  display: block; 
+  overflow-x: auto; 
+  padding: 0.5em;
+}
+
+.hljs-keyword {
+  color: rgb(204, 120, 50);
+}
+
+.hljs-title {
+  color: rgb(255, 198, 109);
+}
+
+.hljs-number {
+  color: rgb(104, 151, 187);
 }

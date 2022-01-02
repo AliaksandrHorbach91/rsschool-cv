@@ -131,6 +131,26 @@
                 <li class="list__item">Git</li>
                 <li class="list__item">React</li>
               </ul>
+              <h3 class="title--bold">Code Example</h3>
+              <code>
+                <pre class="hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">countdown</span>(<span class="hljs-params"></span>) </span>{
+                  <span class="hljs-keyword">const</span> newYearsDate = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(newYears);
+                  <span class="hljs-keyword">const</span> totalSeconds = (newYearsDate - currentDate) / <span class="hljs-number" style="color: rgb(104, 151, 187);">1000</span>;
+                  <span class="hljs-keyword">const</span> days = <span class="hljs-built_in">Math</span>.floor(totalSeconds / <span class="hljs-number">3600</span> / <span class="hljs-number">24</span>);
+                  <span class="hljs-keyword">const</span> hours = <span class="hljs-built_in">Math</span>.floor(totalSeconds / <span class="hljs-number">3600</span>) % <span class="hljs-number">24</span>;
+                  <span class="hljs-keyword">const</span> mins = <span class="hljs-built_in">Math</span>.floor(totalSeconds / <span class="hljs-number">60</span>) % <span class="hljs-number">60</span>;
+                  <span class="hljs-keyword">const</span> seconds = <span class="hljs-built_in">Math</span>.floor(totalSeconds) % <span class="hljs-number">60</span>;
+                  daysEl.textContent = days;
+                  hoursEl.textContent = formatTime(hours);
+                  minsEl.textContent = formatTime(mins);
+                  secondsEl.textContent = formatTime(seconds);
+              }</pre>
+              </code>
+              <h3 class="title--bold">My projects</h3>
+              <ul class="list">
+                <li class="list__item"><a class="list__link" href="https://horbachalex.github.io/Countdown-Timer/" target="_blank">Countdown-Timer</a></li>
+                <li class="list__item"><a class="list__link" href="https://horbachalex.github.io/Lamp/" target="_blank">Lamp</a></li>
+              </ul>
             </div>
         </section>
 
