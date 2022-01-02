@@ -31,6 +31,7 @@ body {
    */
 
 main {
+  scroll-behavior: smooth;
   display: block;
 }
 
@@ -529,4 +530,41 @@ template {
 .contacts-list__icon--geo {
   -webkit-mask-image: url(./icons/googlemaps.svg);
   mask-image: url(./icons/googlemaps.svg);
+}
+
+.education__text--color {
+  font-size: 1.1rem;
+  color: rgba(159, 90, 253, 1)
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-list__item {
+  min-width: 20rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.skills-list__item::before {
+  content: "\2022";  
+  color: rgba(159, 90, 253, 1);
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
+}
+
+.footer {
+  max-width: 1024px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__img {
+  height: 2rem;
 }
