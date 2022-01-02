@@ -378,11 +378,12 @@ template {
 
 .header__menu {
   position: fixed;
+  top: 0;
+  left: 50%;
   width: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  transform: translateX(-50%);
   z-index: 2;
+  background-color: #2d2e2e;
 }
 
 .title {
@@ -392,10 +393,10 @@ template {
 }
 
 .menu {
-  width: 100%;
+  max-width: 1024px;
   height: 5rem;
   padding: 0;
-  margin: 0;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -455,3 +456,40 @@ template {
   padding:15px;  
 }
 
+.contacts-list {
+  list-style-type: none;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background: cover center left no-repeat;
+}
+.contacts-list__icon--git {
+  background-image: url(./icons/github.svg);
+}
+
+.contacts-list__icon--ld {
+  background-image: url(./icons/linkedin.svg);
+}
+
+.contacts-list__icon--tg {
+  background-image: url(./icons/telegram.svg);
+}
+
+.contacts-list__icon--fb {
+  background-image: url(./icons/facebook.svg);
+}
+
+.contacts-list__icon--inst {
+  background-image: url(./icons/instagram.svg);
+}
+
+.contacts-list__icon--gmail {
+  background-image: url(./icons/gmail.svg);
+}
+
+.contacts-list__icon--geo {
+  background-image: url(./icons/googlemaps.svg);
+}
