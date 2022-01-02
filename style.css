@@ -23,6 +23,7 @@ html {
 
 body {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 /**
@@ -75,6 +76,9 @@ pre {
    */
 
 a {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
   background-color: transparent;
 }
 
@@ -370,6 +374,7 @@ template {
   align-items: center;
 }
 
+
 .header__title {
   display: flex;
   flex-direction: column;
@@ -412,7 +417,7 @@ template {
 }
 
 .menu__link:hover {
-  color: rgba(159, 90, 253, 0.4);
+  color: rgba(159, 90, 253, 1);
   transition: 0.2s ease;
 }
 
@@ -457,7 +462,29 @@ template {
 }
 
 .contacts-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
+}
+
+.contacts-list__item {
+  min-width: 20rem;
+  display: flex;
+  padding: 1.1rem 0;
+}
+
+
+.contacts-list__description p {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-list__description {
+  transition: 0.2s ease;
+}
+.contacts-list__description:hover {
+  color: rgba(159, 90, 253, 1);
+  transition: 0.2s ease;
 }
 
 .contacts-list__icon {
@@ -465,31 +492,41 @@ template {
   height: 20px;
   margin-right: 10px;
   background: cover center left no-repeat;
+  background-color: rgba(159, 90, 253, 0.8);
 }
+
+
 .contacts-list__icon--git {
-  background-image: url(./icons/github.svg);
+  -webkit-mask-image: url(./icons/github.svg);
+  mask-image: url(./icons/github.svg);
 }
 
 .contacts-list__icon--ld {
-  background-image: url(./icons/linkedin.svg);
+  -webkit-mask-image: url(./icons/linkedin.svg);
+  mask-image: url(./icons/linkedin.svg);
 }
 
 .contacts-list__icon--tg {
-  background-image: url(./icons/telegram.svg);
+  -webkit-mask-image: url(./icons/telegram.svg);
+  mask-image: url(./icons/telegram.svg);
 }
 
 .contacts-list__icon--fb {
-  background-image: url(./icons/facebook.svg);
+  -webkit-mask-image: url(./icons/facebook.svg);
+  mask-image: url(./icons/facebook.svg);
 }
 
 .contacts-list__icon--inst {
-  background-image: url(./icons/instagram.svg);
+  -webkit-mask-image: url(./icons/instagram.svg);
+  mask-image: url(./icons/instagram.svg);
 }
 
 .contacts-list__icon--gmail {
-  background-image: url(./icons/gmail.svg);
+  -webkit-mask-image: url(./icons/gmail.svg);
+  mask-image: url(./icons/gmail.svg);
 }
 
 .contacts-list__icon--geo {
-  background-image: url(./icons/googlemaps.svg);
+  -webkit-mask-image: url(./icons/googlemaps.svg);
+  mask-image: url(./icons/googlemaps.svg);
 }
