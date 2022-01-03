@@ -1,12 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Aliaksandr Horbach</title>
-</head>
-<body>
-    <h1>Aliaksandr Horbach</h1>
-</body>
+  </head>
+  <body class="body">
+    
+      <header class="header">
+        <div class="wrapper">
+          <nav class="header__menu">
+            <ul class="menu">
+              <li class="menu__item">
+                <a class="menu__link" href="#contacts">contacts</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#about">about</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#education">education</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#skills">skills</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#languages">languages</a>
+              </li>
+            </ul>
+          </nav>
+  
+          <div class="layout">
+            <div>
+              <figure class="photo">
+                <img
+                  class="photo__img"
+                  src="./Photo.img"
+                  alt="Photo of Aliaksandr Horbach"
+                />
+              </figure>
+            </div>
+  
+            <div class="header__title title">
+              <h1 class="title">Aliaksandr Horbach</h1>
+              <h3 class="title">Frontend developer</h3>
+            </div>
+          </div>
+        </div>
+
+      </header>
+
+      <main>
+        
+        <section id='contacts' class="contacts">
+          <div class="wrapper">
+            <h2 class="title--bold">contacts</h2>
+
+            <ul class="contacts-list">
+
+              <li class="contacts-list__item">
+                <div class="contacts-list__icon contacts-list__icon--git"></div>
+                <div class="contacts-list__description"><a href="https://github.com/HorbachAlex" target="_blank">HorbachAlex</a></div>
+              </li>
+
+              <li class="contacts-list__item">
+                <div class="contacts-list__icon contacts-list__icon--ld"></div>
+                <div class="contacts-list__description"><a href="https://www.linkedin.com/in/alex-horbach-9aba9418a/" target="_blank">Alex Horbach</a></div>
+              </li>
+
+              <li class="contacts-list__item">
+                <div class="contacts-list__icon contacts-list__icon--tg"></div>
+                <div class="contacts-list__description"><a href="https://t.me/Alakaktyc" target="_blank">t.me/Alakaktyc</a></div>
+              </li>
+
+              <li class="contacts-list__item">
+                <div class="contacts-list__icon contacts-list__icon--fb"></div>
+                <div class="contacts-list__description"><a href="https://www.facebook.com/profile.php?id=100065521835114" target="_blank">Alex Horbach</a></div>
+              </li>
+
+              <li class="contacts-list__item">
+                <div class="contacts-list__icon contacts-list__icon--inst"></div>
+                <div class="contacts-list__description"><a href="https://www.instagram.com/fuuuuunculture/" target="_blank">fuuuuunculture</a></div>
+              </li>
+
+              <li class="contacts-list__item">
+                <div class="contacts-list__icon contacts-list__icon--gmail"></div>
+                <div class="contacts-list__description"><a href="mailto:horbachalex91@gmail.com" target="_blank">horbachalex91@gmail.com</a></div>
+              </li>
+
+              <li class="contacts-list__item">
+                <div class="contacts-list__icon contacts-list__icon--geo"></div>
+                <div class="contacts-list__description"><p>Poland, Wroclaw</p></div>
+              </li>
+            </ul>
+
+          </div>
+            
+        </section>
+
+
+        <section id='about' class="about">
+            <div class="wrapper">
+              <h2 class="title--bold">about</h2>
+              <p>I am a hard working, honest individual. I am a good timekeeper, always willing to learn new skills. 
+                I am friendly, helpful and polite, have a good sense of humour. 
+                I am able to work independently in busy environments and also within a team setting. 
+                I am outgoing and tactful, and able to listen effectively when solving problems.
+                Extremely motivated for career change goal. Highly organized and detail-oriented.</p>
+            </div>
+        </section>
+
+
+        <section id='education' class="education">
+           <div class="wrapper">
+            <h2 class="title--bold">education</h2>
+            <p class="education__text"><span class="education__text--color">2012 - 2017</span> Yanka Kupala State University of Grodno (Faculty of Physical Education)</p>
+            <p class="education__text"><span class="education__text--color">2008 - 2012</span> College of Lida (Production and technical operation of devices and apparatuses)</p>
+           </div>
+        </section>
+        <section id='skills' class="skills">
+            <div class="wrapper">
+              <h2 class="title--bold">skills</h2>
+              <ul class="list">
+                <li class="list__item">HTML</li>
+                <li class="list__item">CSS (SASS)</li>
+                <li class="list__item">JavaScript</li>
+                <li class="list__item">BEM Methodology</li>
+                <li class="list__item">Gulp</li>
+                <li class="list__item">Git</li>
+                <li class="list__item">React</li>
+              </ul>
+              <h3 class="title--bold">Code Example</h3>
+              <pre class="hljs">
+              <code>
+                <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">countdown</span>(<span class="hljs-params"></span>) </span>{
+                  <span class="hljs-keyword">const</span> newYearsDate = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(newYears);
+                  <span class="hljs-keyword">const</span> totalSeconds = (newYearsDate - currentDate) / <span class="hljs-number" style="color: rgb(104, 151, 187);">1000</span>;
+                  <span class="hljs-keyword">const</span> days = <span class="hljs-built_in">Math</span>.floor(totalSeconds / <span class="hljs-number">3600</span> / <span class="hljs-number">24</span>);
+                  <span class="hljs-keyword">const</span> hours = <span class="hljs-built_in">Math</span>.floor(totalSeconds / <span class="hljs-number">3600</span>) % <span class="hljs-number">24</span>;
+                  <span class="hljs-keyword">const</span> mins = <span class="hljs-built_in">Math</span>.floor(totalSeconds / <span class="hljs-number">60</span>) % <span class="hljs-number">60</span>;
+                  <span class="hljs-keyword">const</span> seconds = <span class="hljs-built_in">Math</span>.floor(totalSeconds) % <span class="hljs-number">60</span>;
+                  daysEl.textContent = days;
+                  hoursEl.textContent = formatTime(hours);
+                  minsEl.textContent = formatTime(mins);
+                  secondsEl.textContent = formatTime(seconds);
+              }
+              </code>
+            </pre>
+              <h3 class="title--bold">My projects</h3>
+              <ul class="list">
+                <li class="list__item"><a class="list__link" href="https://horbachalex.github.io/Countdown-Timer/" target="_blank">Countdown-Timer</a></li>
+                <li class="list__item"><a  class="list__link" href="https://horbachalex.github.io/Lamp/" target="_blank">Lamp</a></li>
+              </ul>
+            </div>
+        </section>
+
+        <section id='languages' class="languages">
+          <div class="wrapper">
+            <h2 class="title--bold">languages</h2>
+            <ul class="list">
+              <li class="list__item">English (Beginner)</li>
+              <li class="list__item">Russian (Native)</li>
+              <li class="list__item">Polish (Elementary)</li>
+            </ul>
+          </div>
+      </section>
+
+        
+      </main>
+
+      <footer class="footer">
+        <div class="wrapper footer__wrapper">
+          <div class="footer__item"><a href="https://github.com/HorbachAlex" target="_blank"><img class="footer__img" src="./icons/github.svg" alt="Github of Alex Horbach"></a></div>
+          <div class="footer__item">2022 &copy; Aliaksandr Horbach</div>
+          <div class="footer__item"><a href="https://rs.school/js/" target="_blank"><img class="footer__img" src="./icons/rs_school_js.svg" alt="Rs School"></a></div>
+        </div>
+          
+      </footer>
+
+  </body>
 </html>
